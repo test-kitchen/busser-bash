@@ -16,13 +16,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-require 'kb/runner_plugin'
+require 'busser/runner_plugin'
 
-# Bash runner plugin for Kitchen Busser (kb).
+# Bash runner plugin for Busser.
 #
 # @author Fletcher Nichol <fnichol@nichol.ca>
 #
-class KB::RunnerPlugin::Bash < KB::RunnerPlugin::Base
+class Busser::RunnerPlugin::Bash < Busser::RunnerPlugin::Base
 
   def test
     Dir.glob("#{suite_path('bash')}/*_{test,spec}.{sh,bash}").each do |file|

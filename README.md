@@ -1,15 +1,15 @@
-# kb-bash
+# busser-bash
 
-[![Build Status](https://travis-ci.org/fnichol/kb-bash-ruby.png?branch=master)](https://travis-ci.org/fnichol/kb-bash-ruby)
-[![Code Climate](https://codeclimate.com/github/fnichol/kb-bash-ruby.png)](https://codeclimate.com/github/fnichol/kb-bash-ruby)
+[![Build Status](https://travis-ci.org/fnichol/busser-bash.png?branch=master)](https://travis-ci.org/fnichol/busser-bash)
+[![Code Climate](https://codeclimate.com/github/fnichol/busser-bash.png)](https://codeclimate.com/github/fnichol/busser-bash)
 
-Bash runner plugin for Kitchen Busser (kb)
+Bash runner plugin for Busser
 
 ## Installation
 
-When using kb directly:
+When using Busser directly:
 
-    kb plugin install kb-bash
+    busser plugin install busser-bash
 
 ## Usage
 
