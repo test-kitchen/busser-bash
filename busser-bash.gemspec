@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Busser::Bash::VERSION
   spec.authors       = ["Fletcher Nichol"]
   spec.email         = ["fnichol@nichol.ca"]
-  spec.description   = %q{Bash runner plugin for Busser}
+  spec.description   = %q{A Busser runner plugin for Bats}
   spec.summary       = spec.description
   spec.homepage      = "https://github.com/fnichol/busser-bash"
   spec.license       = 'Apache 2.0'

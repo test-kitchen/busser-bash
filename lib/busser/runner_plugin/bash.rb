@@ -18,7 +18,7 @@
 
 require 'busser/runner_plugin'
 
-# Bash runner plugin for Busser.
+# A Busser runner plugin for Bash.
 #
 # @author Fletcher Nichol <fnichol@nichol.ca>
 #
