@@ -1,3 +1,10 @@
+## 0.1.2 / 2013-04-10
+
+### Improvements
+
+* Project skeleton updates. ([@fnichol][])
+
+
 ## 0.1.1 / 2013-03-30
 
 * A no-op release to help with Busser gem testing of plugin installs. ([@fnichol][])
