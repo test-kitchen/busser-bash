@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/fnichol/busser-bash.png?branch=master)](https://travis-ci.org/fnichol/busser-bash)
 [![Code Climate](https://codeclimate.com/github/fnichol/busser-bash.png)](https://codeclimate.com/github/fnichol/busser-bash)
 
-A Busser runner plugin for Bash
+A Busser runner plugin for testing bash scripts
 
 ## <a name="installation"></a> Installation and Setup
 
