@@ -1,3 +1,10 @@
+## 0.1.3 / 2013-04-23
+
+### Bug fixes
+
+* Loosen version requirement on busser. ([@fnichol][])
+
+
 ## 0.1.2 / 2013-04-10
 
 ### Improvements
