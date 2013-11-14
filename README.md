@@ -1,6 +1,6 @@
 # <a name="title"></a> Busser::RunnerPlugin::Bash
 
-[![Build Status](https://travis-ci.org/fnichol/busser-bash.png?branch=master)](https://travis-ci.org/fnichol/busser-bash)
+[![Build Status](https://travis-ci.org/test-kitchen/busser-bash.png?branch=master)](https://travis-ci.org/fnichol/busser-bash)
 [![Code Climate](https://codeclimate.com/github/fnichol/busser-bash.png)](https://codeclimate.com/github/fnichol/busser-bash)
 
 A Busser runner plugin for testing bash scripts
