@@ -2,8 +2,7 @@ source 'https://rubygems.org'
 
 gemspec
 
-group :development do
-  gem 'rb-inotify', :require => false
-  gem 'rb-fsevent', :require => false
-  gem 'rb-fchange', :require => false
+group :guard do
+  gem 'guard-cucumber', '~> 1.4'
+  gem 'guard-cane'
 end
