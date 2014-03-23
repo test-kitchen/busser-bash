@@ -1,7 +1,9 @@
 # <a name="title"></a> Busser::RunnerPlugin::Bash
 
+[![Gem Version](https://badge.fury.io/rb/busser-bash.png)](http://badge.fury.io/rb/busser-bash)
 [![Build Status](https://travis-ci.org/test-kitchen/busser-bash.png?branch=master)](https://travis-ci.org/test-kitchen/busser-bash)
 [![Code Climate](https://codeclimate.com/github/test-kitchen/busser-bash.png)](https://codeclimate.com/github/test-kitchen/busser-bash)
+[![Dependency Status](https://gemnasium.com/test-kitchen/busser-bash.svg)](https://gemnasium.com/test-kitchen/busser-bash)
 
 A Busser runner plugin for testing bash scripts
 
