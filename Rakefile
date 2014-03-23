@@ -1,7 +1,6 @@
 require "bundler/gem_tasks"
 require 'cucumber/rake/task'
 require 'cane/rake_task'
-require 'tailor/rake_task'
 
 Cucumber::Rake::Task.new(:features) do |t|
   t.cucumber_opts = ['features', '-x', '--format progress']
@@ -14,8 +13,6 @@ desc "Run cane to check quality metrics"
 Cane::RakeTask.new do |cane|
   cane.canefile = './.cane'
 end
-
-Tailor::RakeTask.new
 
 desc "Display LOC stats"
 task :stats do
