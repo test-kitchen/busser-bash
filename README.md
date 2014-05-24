@@ -13,7 +13,21 @@ Please read the Busser [plugin usage][plugin_usage] page for more details.
 
 ## <a name="usage"></a> Usage
 
-**TODO:** Write documentation explaining the structure/format of testing files.
+Please put test files into [COOKBOOK]/test/integration/[SUITES]/bash/
+
+```cookbook
+`-- test
+    `-- integration
+        `-- default
+            `-- bash
+                `--my_test.sh
+```
+
+The exit code of the script is used as indicator for failure or success.
+
+### <a name="note"></a> Note
+
+Globbing pattern to match files is `"bash/*_{test,spec}.{sh,bash}"`.
 
 ## <a name="development"></a> Development
 
