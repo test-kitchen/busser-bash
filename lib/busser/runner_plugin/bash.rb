@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-require 'busser/runner_plugin'
+require "busser/runner_plugin"
 
 # A Busser runner plugin for Bash.
 #
@@ -25,7 +25,7 @@ require 'busser/runner_plugin'
 class Busser::RunnerPlugin::Bash < Busser::RunnerPlugin::Base
 
   def test
-    Dir.glob("#{suite_path('bash')}/*_{test,spec}.{sh,bash}").each do |file|
+    Dir.glob("#{suite_path("bash")}/*_{test,spec}.{sh,bash}").each do |file|
       banner "[bash] #{File.basename(file)}"
       run!("bash #{file}")
     end
