@@ -1,3 +1,10 @@
+## 0.1.4 / 2014-10-11
+
+### Improvements
+
+* Update testing dependencies, freshen TravisCI build matrix, add style and complexity support. ([@fnichol][])
+
+
 ## 0.1.3 / 2013-04-23
 
 ### Bug fixes

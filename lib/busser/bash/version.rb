@@ -21,6 +21,6 @@ module Busser
   module Bash
 
     # Version string for the Bash Busser runner plugin
-    VERSION = "0.1.3"
+    VERSION = "0.1.4"
   end
 end
