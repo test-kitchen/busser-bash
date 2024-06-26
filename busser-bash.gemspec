@@ -22,7 +22,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency "busser", ">= 0.2.0"
 
   gem.add_development_dependency "aruba"
-  gem.add_development_dependency "bundler", "~> 1.3"
   gem.add_development_dependency "countloc"
   gem.add_development_dependency "rake"
   gem.add_development_dependency "simplecov"
@@ -30,6 +29,6 @@ Gem::Specification.new do |gem|
   # style and complexity libraries are tightly version pinned as newer releases
   # may introduce new and undesireable style choices which would be immediately
   # enforced in CI
-  gem.add_development_dependency "finstyle",  "1.2.0"
   gem.add_development_dependency "cane",      "3.0.0"
+  gem.add_development_dependency "finstyle",  "1.5.0"
 end
