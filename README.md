@@ -1,7 +1,6 @@
 # Busser::RunnerPlugin::Bash
 
 [![Gem Version](https://badge.fury.io/rb/busser-bash.svg)](http://badge.fury.io/rb/busser-bash)
-[![Code Climate](https://codeclimate.com/github/test-kitchen/busser-bash.svg)](https://codeclimate.com/github/test-kitchen/busser-bash)
 
 A Busser runner plugin for testing bash scripts
 
@@ -59,4 +58,4 @@ Apache 2.0 (see [LICENSE][license])
 [issues]:           https://github.com/fnichol/busser-bash/issues
 [license]:          https://github.com/fnichol/busser-bash/blob/master/LICENSE
 [repo]:             https://github.com/fnichol/busser-bash
-[plugin_usage]:     http://docs.kitchen-ci.org/busser/plugin-usage
+[plugin_usage]:     https://kitchen.ci/docs/verifiers/

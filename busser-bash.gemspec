@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.description   = "A Busser runner plugin for testing bash scripts"
   gem.summary       = gem.description
   gem.homepage      = "https://github.com/test-kitchen/busser-bash"
-  gem.license       = "Apache 2.0"
+  gem.license       = "Apache-2.0"
 
   gem.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
   gem.executables   = []
