@@ -1,5 +1,3 @@
-# -*- encoding: utf-8 -*-
-
 require "bundler/gem_tasks"
 
 require "cucumber/rake/task"
@@ -8,6 +6,6 @@ Cucumber::Rake::Task.new(:features) do |t|
 end
 
 desc "Run all test suites"
-task :test => [:features]
+task test: [:features]
 
-task :default => [:test]
+task default: [:test]
