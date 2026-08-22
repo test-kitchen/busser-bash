@@ -1,3 +1,15 @@
+---
+require:
+  - cookstyle/chefstyle
+
+AllCops:
+  TargetRubyVersion: 3.1
+  Include:
+    - "**/*.rb"
+  Exclude:
+    - "vendor/**/*"
+    - "spec/**/*"
+
 Style/ClassAndModuleChildren:
   Exclude:
     - lib/busser/runner_plugin/bash.rb

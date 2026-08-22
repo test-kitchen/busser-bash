@@ -6,6 +6,7 @@ require "English"
 
 Gem::Specification.new do |gem|
   gem.name          = "busser-bash"
+  gem.required_ruby_version = ">= 3.1"
   gem.version       = Busser::Bash::VERSION
   gem.authors       = ["Fletcher Nichol"]
   gem.email         = ["fnichol@nichol.ca"]
@@ -29,6 +30,4 @@ Gem::Specification.new do |gem|
   # style and complexity libraries are tightly version pinned as newer releases
   # may introduce new and undesirable style choices which would be immediately
   # enforced in CI
-  gem.add_development_dependency "cane",      "3.0.0"
-  gem.add_development_dependency "finstyle",  "1.5.0"
 end
