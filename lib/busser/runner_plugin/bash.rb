@@ -23,8 +23,28 @@ require "busser/runner_plugin"
 #
 class Busser::RunnerPlugin::Bash < Busser::RunnerPlugin::Base
 
+  # Only files matching this are executed. Anything else in the suite directory
+  # -- helper scripts, fixtures, a README -- is deliberately left alone, so a
+  # suite can keep shared setup next to its tests.
+  TEST_FILE_GLOB = "*_{test,spec}.{sh,bash}".freeze
+
+  # Selects the scripts to run out of a suite directory.
+  #
+  # Kept as a module function taking an explicit path so the selection rule can
+  # be tested without a Busser root on disk.
+  #
+  # @param path [String, Pathname] the suite directory to search
+  # @return [Array<String>] matching script paths, sorted for a stable run order
+  def self.test_files_in(path)
+    Dir.glob(File.join(path.to_s, TEST_FILE_GLOB)).sort
+  end
+
+  # Runs each bash script in the suite, in turn. A script's exit code is the
+  # verdict, so the first failure aborts the run.
+  #
+  # @return [void]
   def test
-    Dir.glob("#{suite_path("bash")}/*_{test,spec}.{sh,bash}").each do |file|
+    self.class.test_files_in(suite_path("bash")).each do |file|
       banner "[bash] #{File.basename(file)}"
       run!("bash #{file}")
     end
