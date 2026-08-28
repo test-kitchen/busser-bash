@@ -1,5 +1,6 @@
 require_relative "../../spec_helper"
 
+require "shellwords"
 require "tmpdir"
 require "busser/runner_plugin/bash"
 
@@ -56,6 +57,29 @@ describe Busser::RunnerPlugin::Bash do
         File.write(File.join(dir, "a_test.sh"), "")
         _(Busser::RunnerPlugin::Bash.test_files_in(Pathname.new(dir)).size).must_equal 1
       end
+    end
+  end
+
+  describe ".command_for" do
+    it "runs the script with bash" do
+      cmd = Busser::RunnerPlugin::Bash.command_for("/opt/busser/suites/bash/a_test.sh")
+
+      _(Shellwords.split(cmd)).must_equal ["bash", "/opt/busser/suites/bash/a_test.sh"]
+    end
+
+    # BUSSER_ROOT is chosen by the caller, and Test Kitchen roots it under a
+    # user-controlled directory. Unquoted, a space split the path and bash was
+    # handed a fragment.
+    it "quotes a path containing spaces" do
+      cmd = Busser::RunnerPlugin::Bash.command_for("/tmp/my tests/bash/a_test.sh")
+
+      _(Shellwords.split(cmd)).must_equal ["bash", "/tmp/my tests/bash/a_test.sh"]
+    end
+
+    it "neutralises shell metacharacters in the path" do
+      cmd = Busser::RunnerPlugin::Bash.command_for("/tmp/a;touch pwned/a_test.sh")
+
+      _(Shellwords.split(cmd)).must_equal ["bash", "/tmp/a;touch pwned/a_test.sh"]
     end
   end
 end
