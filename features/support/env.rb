@@ -4,15 +4,14 @@ require "busser/cucumber"
 if ENV["COVERAGE"]
   require "simplecov"
   SimpleCov.command_name "features"
+  SimpleCov.start do
+    add_filter "/features/"
+    add_group "Libraries", "/lib/"
+  end
 end
 
-Before do
-  @aruba_timeout_seconds = 30
-end
-
-After do |s|
-  # Tell Cucumber to quit after this scenario is done - if it failed.
-  # This is useful to inspect the 'tmp/aruba' directory before any other
-  # steps are executed and clear it out.
-  Cucumber.wants_to_quit = true if s.failed?
+# aruba 2 dropped @aruba_timeout_seconds; setting it in a Before hook is a
+# no-op, which quietly left these commands on aruba's 15 second default.
+Aruba.configure do |config|
+  config.exit_timeout = 60
 end
