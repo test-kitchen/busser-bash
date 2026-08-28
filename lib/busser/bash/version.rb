@@ -20,6 +20,6 @@ module Busser
   module Bash
 
     # Version string for the Bash Busser runner plugin
-    VERSION = "0.1.5.dev".freeze
+    VERSION = "0.1.4".freeze
   end
 end
