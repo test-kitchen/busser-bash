@@ -17,6 +17,7 @@
 
 module Busser
 
+  # Namespace for the Bash Busser runner plugin.
   module Bash
 
     # Version string for the Bash Busser runner plugin
