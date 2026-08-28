@@ -1,4 +1,3 @@
-# -*- encoding: utf-8 -*-
 #
 # Author:: Fletcher Nichol (<fnichol@nichol.ca>)
 #
@@ -21,6 +20,6 @@ module Busser
   module Bash
 
     # Version string for the Bash Busser runner plugin
-    VERSION = "0.1.5.dev"
+    VERSION = "0.1.4".freeze
   end
 end

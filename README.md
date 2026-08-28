@@ -1,8 +1,6 @@
-# <a name="title"></a> Busser::RunnerPlugin::Bash
+# Busser::RunnerPlugin::Bash
 
-[![Gem Version](https://badge.fury.io/rb/busser-bash.png)](http://badge.fury.io/rb/busser-bash)
-[![Build Status](https://travis-ci.org/test-kitchen/busser-bash.png?branch=master)](https://travis-ci.org/test-kitchen/busser-bash)
-[![Code Climate](https://codeclimate.com/github/test-kitchen/busser-bash.png)](https://codeclimate.com/github/test-kitchen/busser-bash)
+[![Gem Version](https://badge.fury.io/rb/busser-bash.svg)](http://badge.fury.io/rb/busser-bash)
 
 A Busser runner plugin for testing bash scripts
 
@@ -10,11 +8,11 @@ A Busser runner plugin for testing bash scripts
 
 This software project is no longer under active development as it has no active maintainers. The software may continue to work for some or all use cases, but issues filed in GitHub will most likely not be triaged. If a new maintainer is interested in working on this project please come chat with us in #test-kitchen on Chef Community Slack.
 
-## <a name="installation"></a> Installation and Setup
+## Installation and Setup
 
 Please read the Busser [plugin usage][plugin_usage] page for more details.
 
-## <a name="usage"></a> Usage
+## Usage
 
 Please put test files into [COOKBOOK]/test/integration/[SUITES]/bash/
 
@@ -28,11 +26,11 @@ Please put test files into [COOKBOOK]/test/integration/[SUITES]/bash/
 
 The exit code of the script is used as indicator for failure or success.
 
-### <a name="note"></a> Note
+### Note
 
 Globbing pattern to match files is `"bash/*_{test,spec}.{sh,bash}"`.
 
-## <a name="development"></a> Development
+## Development
 
 * Source hosted at [GitHub][repo]
 * Report issues/questions/feature requests on [GitHub Issues][issues]
@@ -47,11 +45,11 @@ example:
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-## <a name="authors"></a> Authors
+## Authors
 
 Created and maintained by [Fletcher Nichol][author] (<fnichol@nichol.ca>)
 
-## <a name="license"></a> License
+## License
 
 Apache 2.0 (see [LICENSE][license])
 
@@ -60,4 +58,4 @@ Apache 2.0 (see [LICENSE][license])
 [issues]:           https://github.com/fnichol/busser-bash/issues
 [license]:          https://github.com/fnichol/busser-bash/blob/master/LICENSE
 [repo]:             https://github.com/fnichol/busser-bash
-[plugin_usage]:     http://docs.kitchen-ci.org/busser/plugin-usage
+[plugin_usage]:     https://kitchen.ci/docs/verifiers/
