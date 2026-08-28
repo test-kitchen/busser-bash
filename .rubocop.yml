@@ -4,10 +4,3 @@ require:
 
 AllCops:
   TargetRubyVersion: 3.2
-  Exclude:
-    - "vendor/**/*"
-    - "spec/**/*"
-
-Style/ClassAndModuleChildren:
-  Exclude:
-    - lib/busser/runner_plugin/bash.rb
