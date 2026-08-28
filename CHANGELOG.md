@@ -5,6 +5,13 @@
 * Update testing dependencies, freshen TravisCI build matrix, add style and complexity support. ([@fnichol][])
 
 
+## [0.2.1](https://github.com/test-kitchen/busser-bash/compare/v0.2.0...v0.2.1) (2026-08-28)
+
+
+### Bug Fixes
+
+* quote script paths before handing them to a shell ([#23](https://github.com/test-kitchen/busser-bash/issues/23)) ([3a3ecfc](https://github.com/test-kitchen/busser-bash/commit/3a3ecfc92b9de2cbf9cf008ab2d72401e94db8d9))
+
 ## [0.2.0](https://github.com/test-kitchen/busser-bash/compare/v0.1.4...v0.2.0) (2026-08-28)
 
 
