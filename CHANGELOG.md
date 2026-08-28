@@ -5,6 +5,17 @@
 * Update testing dependencies, freshen TravisCI build matrix, add style and complexity support. ([@fnichol][])
 
 
+## [0.2.0](https://github.com/test-kitchen/busser-bash/compare/v0.1.4...v0.2.0) (2026-08-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* Ruby 3.1 and busser releases older than 0.9.0 are no longer supported.
+
+### Features
+
+* require Ruby 3.2 and busser 0.9, adopt release-please ([3e7a605](https://github.com/test-kitchen/busser-bash/commit/3e7a605c2a0c09b741b7cf294ee23775405fc9b2))
+
 ## 0.1.3 / 2013-04-23
 
 ### Bug fixes
