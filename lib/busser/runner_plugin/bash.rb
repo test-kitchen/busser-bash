@@ -15,6 +15,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+require "shellwords" unless defined?(Shellwords)
+
 require "busser/runner_plugin"
 
 # A Busser runner plugin for Bash.
@@ -46,7 +48,19 @@ class Busser::RunnerPlugin::Bash < Busser::RunnerPlugin::Base
   def test
     self.class.test_files_in(suite_path("bash")).each do |file|
       banner "[bash] #{File.basename(file)}"
-      run!("bash #{file}")
+      run!(self.class.command_for(file))
     end
+  end
+
+  # Builds the command that runs one script.
+  #
+  # The path is quoted. It is rooted at BUSSER_ROOT, which the caller chooses,
+  # so an unquoted path containing a space would be split by the shell and bash
+  # would be handed a fragment instead of the script.
+  #
+  # @param file [String, Pathname] path to the script
+  # @return [String] the command to run
+  def self.command_for(file)
+    "bash #{Shellwords.escape(file.to_s)}"
   end
 end
